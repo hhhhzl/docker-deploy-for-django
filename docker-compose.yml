@@ -1,0 +1,54 @@
+version: "3.8"
+services:
+  # database container (localhost:53306)
+  db:
+    image: mysql:8.0.25
+    restart: always
+    environment:
+      MYSQL_DATABASE: desp
+      MYSQL_USER: casdev
+      MYSQL_PASSWORD: iepDev<Cas&001
+      MYSQL_ROOT_PASSWORD: iepDev<Cas&001
+    ports:
+      - 53306:3306
+    volumes:
+      - ./db/.dbsource:/var/lib/mysql
+  # backend + api container (localhost:58000)
+  
+  backend:
+    build:
+      context: ./DESP/
+      dockerfile: ./docker/Dockerfile
+    command: [
+      # wait for db setup
+        "./docker/wait-for-it.sh",
+        "--timeout=30",
+        "db:3306",
+        "--",
+      # run django server
+        "./docker/run.sh",
+    ]
+    ports:
+      - 8000:8000
+    volumes:
+      - ./DESP:/DESP
+    links:
+    - db
+    depends_on:
+    - db
+    restart: always
+
+  nginx:
+    build: ./nginx
+    ports:
+    - "80:8080"
+    volumes:
+    - ./DESP/static:/usr/share/nginx/html/static:ro
+    - ./DESP/media:/usr/share/nginx/html/media:ro
+    links:
+    - backend
+    depends_on:
+    - backend
+    restart: always
+
+

@@ -1,0 +1,640 @@
+[
+  {
+    "model": "organizations.organization",
+    "pk": 1,
+    "fields": {
+      "name": "平台管理员",
+      "org_type": "I",
+      "is_active": true,
+      "parent_org": null,
+      "address": null,
+      "postcode": null,
+      "department": null,
+      "phone": null
+    }
+  },
+  {
+    "model": "organizations.organization",
+    "pk": 2,
+    "fields": {
+      "name": "测试机构1",
+      "org_type": "U",
+      "is_active": true,
+      "parent_org": 1,
+      "address": null,
+      "postcode": null,
+      "department": null,
+      "phone": null
+    }
+  },
+  {
+    "model": "organizations.organization",
+    "pk": 3,
+    "fields": {
+      "name": "测试机构2",
+      "org_type": "U",
+      "is_active": true,
+      "parent_org": 2,
+      "address": null,
+      "postcode": null,
+      "department": null,
+      "phone": null
+    }
+  },
+  {
+    "model": "organizations.organization",
+    "pk": 4,
+    "fields": {
+      "name": "测试机构3",
+      "org_type": "U",
+      "is_active": true,
+      "parent_org": 1,
+      "address": null,
+      "postcode": null,
+      "department": null,
+      "phone": null
+    }
+  },
+  {
+    "model": "organizations.organization",
+    "pk": 6,
+    "fields": {
+      "name": "测试机构3-1",
+      "org_type": "I",
+      "is_active": true,
+      "parent_org": 3,
+      "address": null,
+      "postcode": null,
+      "department": null,
+      "phone": null
+    }
+  },
+  {
+    "model": "organizations.organization",
+    "pk": 7,
+    "fields": {
+      "name": "测试机构3-2",
+      "org_type": "I",
+      "is_active": true,
+      "parent_org": 3,
+      "address": null,
+      "postcode": null,
+      "department": null,
+      "phone": null
+    }
+  },
+  {
+    "model": "organizations.organization",
+    "pk": 8,
+    "fields": {
+      "name": "测试机构3-3",
+      "org_type": "I",
+      "is_active": true,
+      "parent_org": 3,
+      "address": null,
+      "postcode": null,
+      "department": null,
+      "phone": null
+    }
+  },
+  {
+    "model": "organizations.organization",
+    "pk": 31,
+    "fields": {
+      "name": "test1",
+      "org_type": "U",
+      "is_active": true,
+      "parent_org": 1,
+      "address": null,
+      "postcode": null,
+      "department": null,
+      "phone": null
+    }
+  },
+  {
+    "model": "organizations.organization",
+    "pk": 32,
+    "fields": {
+      "name": "test2",
+      "org_type": "U",
+      "is_active": true,
+      "parent_org": 1,
+      "address": null,
+      "postcode": null,
+      "department": null,
+      "phone": null
+    }
+  },
+  {
+    "model": "organizations.organization",
+    "pk": 33,
+    "fields": {
+      "name": "test3",
+      "org_type": "U",
+      "is_active": true,
+      "parent_org": 1,
+      "address": null,
+      "postcode": null,
+      "department": null,
+      "phone": null
+    }
+  },
+  {
+    "model": "organizations.organization",
+    "pk": 34,
+    "fields": {
+      "name": "test4",
+      "org_type": "I",
+      "is_active": true,
+      "parent_org": 31,
+      "address": null,
+      "postcode": null,
+      "department": null,
+      "phone": null
+    }
+  },
+  {
+    "model": "users.despuser",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$kzXHkbQbnDTqicI2thRliY$BsSoAmvaG34O60Bqxti53RWFe+Z0r5OFK04mLQGkhso=",
+      "last_login": null,
+      "is_superuser": true,
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2021-08-24T13:41:30.467",
+      "username": "yuxuan",
+      "email": "yxfan99@gmail.com",
+      "last_name": "范",
+      "first_name": "宇轩",
+      "sex": "M",
+      "mobile_number": "12345678901",
+      "tel_number": null,
+      "degree": "3",
+      "org": 1,
+      "position": null,
+      "field": null,
+      "user_type": "S",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.despuser",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$X31LOlfrCaygTWlCyXGuPO$U5DAI3OoON4E2C6BwS8dlzdt8vGvY9rSHBIcOQYL7LM=",
+      "last_login": null,
+      "is_superuser": true,
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2021-08-24T14:14:43.095",
+      "username": "tests",
+      "email": "s@test.account",
+      "last_name": "测试账户",
+      "first_name": "超级管理员",
+      "sex": "M",
+      "mobile_number": "12345678901",
+      "tel_number": null,
+      "degree": "1",
+      "org": 1,
+      "position": null,
+      "field": null,
+      "user_type": "S",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.despuser",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$2OqsqoSI5NIDUIqAW7fjeO$m9o8DH/0kN9+6Tj5/llLJfOQECn3ob017nKhPL3XCMM=",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-08-24T14:15:08.066",
+      "username": "testa",
+      "email": "a@test.account",
+      "last_name": "测试账户",
+      "first_name": "管理员",
+      "sex": "F",
+      "mobile_number": "12345678901",
+      "tel_number": null,
+      "degree": "2",
+      "org": 1,
+      "position": null,
+      "field": null,
+      "user_type": "A",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.despuser",
+    "pk": 4,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$96QKR6dg0CphkCrBqDxmb3$D/M5PYqiQJO5RaMRANTGGQx2zGdUbjjDyz7neySf8cE=",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-08-24T14:15:25.612",
+      "username": "teste",
+      "email": "e@test.account",
+      "last_name": "测试账户",
+      "first_name": "专家",
+      "sex": "M",
+      "mobile_number": "12345678901",
+      "tel_number": null,
+      "degree": "3",
+      "org": 1,
+      "position": null,
+      "field": null,
+      "user_type": "E",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.despuser",
+    "pk": 5,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$3CmUYUjN98mtixA3Tv1pK8$m8lcOvMPbAkuyyQNfIygojs08DLz5m560N0OJqS7k80=",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-08-24T14:15:49.070",
+      "username": "testm",
+      "email": "m@test.account",
+      "last_name": "测试账户",
+      "first_name": "机构领导",
+      "sex": "F",
+      "mobile_number": "12345678901",
+      "tel_number": null,
+      "degree": "4",
+      "org": 1,
+      "position": null,
+      "field": null,
+      "user_type": "M",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.despuser",
+    "pk": 6,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$oerved2k2gtxsW2NPDY9bV$p02mi3jFAEkVHZ//1P8QecLwQ1w3dfT/8B5V2SGbp0I=",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-08-24T14:16:04.744",
+      "username": "testu",
+      "email": "u@test.account",
+      "last_name": "测试账户",
+      "first_name": "机构用户",
+      "sex": "M",
+      "mobile_number": "12345678901",
+      "tel_number": null,
+      "degree": "5",
+      "org": 1,
+      "position": null,
+      "field": null,
+      "user_type": "U",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.despuser",
+    "pk": 7,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$wX7ZZlSIwqVzF4aaiGaei2$eu8x3Wvt3+2RvKCEwlNW9s4YEzIhTnuAZnkWmqLc/P4=",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-08-27T14:02:24.087",
+      "username": "test11",
+      "email": "test11@test.account",
+      "last_name": "test",
+      "first_name": "11",
+      "sex": "M",
+      "mobile_number": "11111111111",
+      "tel_number": null,
+      "degree": "1",
+      "org": 1,
+      "position": null,
+      "field": null,
+      "user_type": "U",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.despuser",
+    "pk": 8,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$Zob48gk9koe3XqQ1dT1Pbv$tN/y2BNnVxrgkPJN8HzN7otJcpHpdpWtIS3//02zRnw=",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-08-27T14:03:30.527",
+      "username": "test4u",
+      "email": "test4u@test4u.test4u",
+      "last_name": "test4u",
+      "first_name": "test4u",
+      "sex": "F",
+      "mobile_number": "13023003300",
+      "tel_number": null,
+      "degree": "5",
+      "org": 34,
+      "position": null,
+      "field": null,
+      "user_type": "U",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.despuser",
+    "pk": 9,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$AkemOJMg14r5O17RVl5iNC$VQHnkNcwCnpokWAtovedycCxAsq6LaQCiVZQ2zWoN8Q=",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-08-30T09:38:09.678",
+      "username": "qianli",
+      "email": "wuqianli@abc.abc",
+      "last_name": "吴",
+      "first_name": "千里",
+      "sex": "M",
+      "mobile_number": "12312312312",
+      "tel_number": null,
+      "degree": "3",
+      "org": 2,
+      "position": null,
+      "field": null,
+      "user_type": "M",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "projects.project",
+    "pk": 1,
+    "fields": {
+      "name": "测试项目1",
+      "admin": 1,
+      "created_at": "2021-09-02T10:30:12.506",
+      "send_with": "L",
+      "will_mark": true,
+      "is_active": true,
+      "start_time": "2021-09-02T00:00:00",
+      "end_time": "2022-10-01T23:59:59"
+    }
+  },
+  {
+    "model": "projects.project",
+    "pk": 2,
+    "fields": {
+      "name": "测试项目2",
+      "admin": 1,
+      "created_at": "2021-09-02T10:30:12.508",
+      "send_with": "L",
+      "will_mark": true,
+      "is_active": true,
+      "start_time": "2021-09-02T00:00:00",
+      "end_time": "2022-10-01T23:59:59"
+    }
+  },
+  {
+    "model": "projects.project",
+    "pk": 3,
+    "fields": {
+      "name": "test1",
+      "admin": 1,
+      "created_at": "2021-09-02T10:30:41.053",
+      "send_with": "L",
+      "will_mark": true,
+      "is_active": true,
+      "start_time": "2021-09-02T10:30:41.052",
+      "end_time": "2021-09-02T10:30:41.052"
+    }
+  },
+  {
+    "model": "projects.project",
+    "pk": 4,
+    "fields": {
+      "name": "test2",
+      "admin": 1,
+      "created_at": "2021-09-02T10:30:41.094",
+      "send_with": "L",
+      "will_mark": true,
+      "is_active": true,
+      "start_time": "2021-09-02T10:30:41.094",
+      "end_time": "2021-09-02T10:30:41.094"
+    }
+  },
+  {
+    "model": "projects.project",
+    "pk": 5,
+    "fields": {
+      "name": "test5",
+      "admin": 1,
+      "created_at": "2021-09-02T10:30:57.128",
+      "send_with": "L",
+      "will_mark": true,
+      "is_active": true,
+      "start_time": "2021-09-02T10:30:57.128",
+      "end_time": "2021-09-02T10:30:57.128"
+    }
+  },
+  {
+    "model": "questionnaires.questionnaire",
+    "pk": 1,
+    "fields": {
+      "project": 1,
+      "title": "test1",
+      "description": "test1",
+      "identifier": "1"
+    }
+  },
+  {
+    "model": "questionnaires.questionnaire",
+    "pk": 2,
+    "fields": {
+      "project": 1,
+      "title": "test2",
+      "description": "test1",
+      "identifier": "1"
+    }
+  },
+  {
+    "model": "questionnaires.questionnaire",
+    "pk": 3,
+    "fields": {
+      "project": 1,
+      "title": "test3",
+      "description": "test1",
+      "identifier": "1"
+    }
+  },
+  {
+    "model": "questionnaires.questionnaire",
+    "pk": 4,
+    "fields": {
+      "project": 2,
+      "title": "test1",
+      "description": "test1",
+      "identifier": "1"
+    }
+  },
+  {
+    "model": "questionnaires.questionnaire",
+    "pk": 5,
+    "fields": {
+      "project": 2,
+      "title": "test2",
+      "description": "test1",
+      "identifier": "1"
+    }
+  },
+  {
+    "model": "questionnaires.questionnaire",
+    "pk": 6,
+    "fields": {
+      "project": 2,
+      "title": "test3",
+      "description": "test1",
+      "identifier": "1"
+    }
+  },
+  {
+    "model": "questionnaires.questionnaire",
+    "pk": 7,
+    "fields": {
+      "project": 3,
+      "title": "test1",
+      "description": "test1",
+      "identifier": "1"
+    }
+  },
+  {
+    "model": "questionnaires.questionnaire",
+    "pk": 8,
+    "fields": {
+      "project": 3,
+      "title": "test2",
+      "description": "test1",
+      "identifier": "1"
+    }
+  },
+  {
+    "model": "questionnaires.questionnaire",
+    "pk": 9,
+    "fields": {
+      "project": 3,
+      "title": "test3",
+      "description": "test1",
+      "identifier": "1"
+    }
+  },
+  {
+    "model": "questions.question",
+    "pk": 1,
+    "fields": {
+      "qnaire": 1,
+      "question_type": "1",
+      "title": "本年度，你单位利用中科院教育云平台开展教育管理情况",
+      "stem": "{\"canMultiSelect\":true,\"detail\":\"备注：2021年1月1日至2021年12月31日\",\"options\":[\"按时完成招生的过程管理，包括：专业目录编制、初试、复试、调剂、录取、推免管理\",\"按时完成学生的学籍管理，包括：信息维护、学籍变更、月报、学年注册、毕业注册\",\"按时完成学生的培养管理（不存在大批量后期补录），包括：开题、中期、答辩等\",\"按时完成学位初审工作\",\"利用教师系统的个人主页功能发布个人主页的在岗导师达到50%以上\"],\"optionsHaveBlank\":[false,false,true,true,false],\"scores\":[1,2,3,1,2]}",
+      "is_required": true,
+      "min_score": "0.000000",
+      "max_score": "5.000000",
+      "rubric": "E",
+      "rubric_detail": null
+    }
+  },
+  {
+    "model": "questions.question",
+    "pk": 2,
+    "fields": {
+      "qnaire": 1,
+      "question_type": "2",
+      "title": "本年度，你单位使用科技网以外互联网接入带宽现状",
+      "stem": "{\"detail\":\"备注：2021年1月1日至2021年12月31日\\nA、中国联通，带宽|_____|Mbps。\\nB、中国电信，带宽|_____|Mbps。\\nC、中国移动，带宽|_____|Mbps。\\nD、中国教育网，带宽|_____|Mbps。\\nE、其他，带宽|_____|Mbps。\",\"options\":[{\"type\":\"number\",\"min\":0,\"width\":10},{\"type\":\"number\",\"min\":0,\"width\":4},{\"type\":\"number\",\"min\":0,\"width\":3},{\"type\":\"number\",\"min\":0,\"width\":2},{\"type\":\"number\",\"min\":0,\"width\":1}]}",
+      "is_required": true,
+      "min_score": "0.000000",
+      "max_score": "5.000000",
+      "rubric": "E",
+      "rubric_detail": null
+    }
+  },
+  {
+    "model": "questions.question",
+    "pk": 3,
+    "fields": {
+      "qnaire": 1,
+      "question_type": "3",
+      "title": "人员分数",
+      "stem": "{\"detail\":\"备注：2021年1月1日至2021年12月31日\",\"rowLabels\":[\"学生A\",\"学生B\",\"学生C\",\"学生D\",\"学生E\",\"学生F\",\"学生G\"],\"columnLabels\":[\"A+\",\"A\",\"A-\",\"B+\",\"B\",\"B-\",\"C+\",\"C\",\"C-\",\"D\",\"F\"],\"canMultiSelect\":false}",
+      "is_required": true,
+      "min_score": "0.000000",
+      "max_score": "5.000000",
+      "rubric": "E",
+      "rubric_detail": null
+    }
+  },
+  {
+    "model": "questions.question",
+    "pk": 4,
+    "fields": {
+      "qnaire": 1,
+      "question_type": "4",
+      "title": "简答示例",
+      "stem": "{\"detail\":\"备注：2021年1月1日至2021年12月31日\"}",
+      "is_required": true,
+      "min_score": "0.000000",
+      "max_score": "5.000000",
+      "rubric": "E",
+      "rubric_detail": null
+    }
+  },
+  {
+    "model": "questions.question",
+    "pk": 5,
+    "fields": {
+      "qnaire": 1,
+      "question_type": "5",
+      "title": "表格",
+      "stem": "{\"detail\":\"备注：2021年1月1日至2021年12月31日\",\"columnLabels\":[\"列A\",\"列B\",\"列C\",\"列D\",\"列E\",\"列F\",\"列G\"]}",
+      "is_required": true,
+      "min_score": "0.000000",
+      "max_score": "5.000000",
+      "rubric": "E",
+      "rubric_detail": null
+    }
+  },
+  {
+    "model": "questions.question",
+    "pk": 6,
+    "fields": {
+      "qnaire": 1,
+      "question_type": "6",
+      "title": "专利文件",
+      "stem": "{\"detail\":\"备注：2021年1月1日至2021年12月31日\"}",
+      "is_required": true,
+      "min_score": "0.000000",
+      "max_score": "5.000000",
+      "rubric": "E",
+      "rubric_detail": null
+    }
+  }
+]
