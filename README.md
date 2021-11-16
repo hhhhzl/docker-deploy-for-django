@@ -2,7 +2,6 @@
 
 Docker delopyment for django-nginx-mysql-react
 
-# DESP-API
 
 ## Running
 
